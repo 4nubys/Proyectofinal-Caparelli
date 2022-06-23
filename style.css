@@ -1,0 +1,66 @@
+
+.grid-item{
+    padding: 15px;
+}
+
+.grid-header{
+    grid-area: header;
+    background-color: blueviolet;
+}
+
+.grid-main{
+    grid-area:main;
+    background-color: blue;
+}
+
+
+
+.grid-aside{
+    grid-area: aside;
+    background-color: rgb(197, 152, 152);
+
+}
+
+.grid-section{
+    grid-area:section;
+    background-color: rgb(24, 13, 9);
+}
+
+#servicios{
+    background-color: gray;
+}
+
+
+
+@media (max-width: 480px){
+    .grid-container{
+
+        display: grid;
+        background-color: bisque;
+        grid-template-areas:
+        "header header"
+        "main section"
+        "aside aside"
+        "footer footer";
+        grid-template-rows: 1fr 1fr 1fr;
+        height: 170vh;
+           
+    }
+
+    .grid-header{
+        justify-content: space-around;
+    }
+
+    .grid-container-productos{
+
+        display: grid;
+        background-color: bisque;
+        grid-template-areas:
+        "header header"
+        "main main"
+        "main main"
+        "footer footer";
+        grid-template-rows: 1fr 1fr 1fr;
+          
+    }
+}
